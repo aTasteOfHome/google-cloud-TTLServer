@@ -2,8 +2,6 @@ runtime: python27
 api_version: 1,
 threadsafe: true
 handlers: 
-  - url: /
+  - url: /.*
     script: main.py
     secure: always
-    login: admin
-    auth_fail_action: unauthorized

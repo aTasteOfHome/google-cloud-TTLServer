@@ -7,6 +7,6 @@ const firestore = new Firestore({
 
 module.exports.onFirestoreChange = (event, cb) => {
     console.log(event);
-    console.log(_.get(event, 'value.fields.field'))
+    console.log(_.get(event, 'value.fields.field'));
     cb();
 };
